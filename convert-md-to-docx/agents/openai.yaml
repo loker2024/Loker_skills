@@ -1,0 +1,4 @@
+interface:
+  display_name: "Convert MD to DOCX"
+  short_description: "Markdown转DOCX并编号保存图表资源"
+  default_prompt: "Use $convert-md-to-docx to convert this Markdown file to DOCX and save diagrams as simply numbered image assets."

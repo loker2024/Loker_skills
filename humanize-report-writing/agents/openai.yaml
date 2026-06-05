@@ -1,0 +1,4 @@
+interface:
+  display_name: "Humanize Report Writing"
+  short_description: "面向实验报告和课程文档的自然化润色、保真改写与去AI腔处理"
+  default_prompt: "Use $humanize-report-writing to polish this lab report so it reads naturally and keeps the original meaning."
