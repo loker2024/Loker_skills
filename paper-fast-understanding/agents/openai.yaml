@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI 论文快速理解"
+  short_description: "快速读懂 AI 论文并输出结论、方法、实验和复现指南。"
+  default_prompt: "请使用这个 Skill 分析我提供的 AI 论文 PDF 或链接。"
