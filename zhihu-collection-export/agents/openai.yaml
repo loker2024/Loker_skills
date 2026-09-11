@@ -1,0 +1,4 @@
+interface:
+  display_name: "知乎收藏夹导出"
+  short_description: "导出知乎收藏夹，并修复和验证 Markdown 公式、图片与中文显示"
+  default_prompt: "使用 $zhihu-collection-export，通过当前项目导出指定知乎收藏夹，并在目标阅读器中验证公式和图片。"
