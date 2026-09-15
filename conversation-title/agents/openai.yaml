@@ -1,0 +1,3 @@
+interface:
+  display_name: "对话标题格式化"
+  short_description: "按创建日期为当前对话规范命名"
