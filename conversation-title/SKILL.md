@@ -9,10 +9,10 @@ description: Use when the user asks to name, rename, or standardize the current 
 
 ## 命名流程
 
-1. 若 SessionStart 注入了 `<conversation-title-context>`，从其中读取 `thread-id`，并运行 `node "$CODEX_HOME/skills/conversation-title/scripts/thread-title.mjs" --thread-id <id> --created-at`。使用返回的 `createdAt` 转换为 Asia/Shanghai 日期；不得用 `updatedAt` 代替。
+1. 若 SessionStart 注入了 `<conversation-title-context>`，从其中读取 `thread-id`，并运行 `node "${CODEX_HOME:-$HOME/.codex}/skills/conversation-title/scripts/thread-title.mjs" --thread-id <id> --created-at`。使用返回的 `createdAt` 转换为 Asia/Shanghai 日期；不得用 `updatedAt` 代替。
 2. 根据本次实际任务选择一个类型：`功能`、`设计`、`修复`、`优化`、`发布`、`探索`、`文档`、`研究`。
 3. 提炼简洁、具体的主题；不要重复项目名称、堆砌关键词或照抄完整用户消息。
-4. 以 `YYYYMMDD｜类型｜主题` 组成标题后，运行 `node "$CODEX_HOME/skills/conversation-title/scripts/thread-title.mjs" --thread-id <id> --name '<标题>'`。脚本仅通过 App Server 更新该 `thread-id` 的用户可见标题。
+4. 以 `YYYYMMDD｜类型｜主题` 组成标题后，运行 `node "${CODEX_HOME:-$HOME/.codex}/skills/conversation-title/scripts/thread-title.mjs" --thread-id <id> --name '<标题>'`。脚本仅通过 App Server 更新该 `thread-id` 的用户可见标题。
 
 ## 边界
 
